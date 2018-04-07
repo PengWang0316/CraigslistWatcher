@@ -1,0 +1,55 @@
+{
+  "name": "craigslistwatcher",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "author": "Kevin Wang <rocwang0316@gmail.com>",
+  "license": "MIT",
+  "description": "A React Native project that is built to use Craigslist easier.",
+  "main": "index.js",
+  "keywords": [
+    "Craigslist",
+    "watcher",
+    "react",
+    "react-naitve"
+  ],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0",
+    "react-native": "0.55.1",
+    "react-native-animatable": "^1.2.4",
+    "react-native-elements": "^0.19.0",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^1.5.1",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3",
+    "react-test-renderer": "^16.3.0",
+    "redux-mock-store": "^1.5.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation)/"
+    ]
+  }
+}
