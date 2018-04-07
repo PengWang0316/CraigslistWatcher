@@ -1,0 +1,1 @@
+export const AMOUNT_ITEMS_IN_ONE_PAGE = 120;
