@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-navigation';
 
 import DarkGreenStatusBar from '../components/DarkGreenStatusBar';
 import SearchHeadBar from '../components/SearchHeadBar';
@@ -10,10 +11,10 @@ const styles = StyleSheet.create({
 });
 
 const ExploreListScreen = props => (
-  <View style={styles.mainView}>
+  <SafeAreaView style={styles.mainView}>
     <DarkGreenStatusBar />
     <SearchHeadBar />
     <ItemsList />
-  </View>
+  </SafeAreaView>
 );
 export default ExploreListScreen;
