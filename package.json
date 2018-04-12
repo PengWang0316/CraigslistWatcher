@@ -17,8 +17,7 @@
     "react-naitve"
   ],
   "dependencies": {
-    "craigslist-search": "0.0.17",
-    "craigslist-searcher": "0.0.9",
+    "craigslist-searcher": "0.0.11",
     "prop-types": "^15.6.1",
     "react": "^16.3.0",
     "react-native": "0.55.1",
