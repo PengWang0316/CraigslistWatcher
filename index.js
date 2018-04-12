@@ -9,4 +9,6 @@ const store = configureStore();
 
 const AppContainer = () => (<Provider store={store}><App /></Provider>);
 
+console.ignoredYellowBox = ['Warning: component', 'Warning: isMounted'];
+
 AppRegistry.registerComponent('CraigslistWatcher', () => AppContainer);
