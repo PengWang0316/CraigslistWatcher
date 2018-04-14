@@ -2,7 +2,7 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
 import { INCREASE_PAGE_NUMBER_SUCCESS, CHANGE_CITY_SUCCESS, CHANGE_CATEGORY_SUCCESS, CHANGE_KEYWORD_SUCCESS } from '../../App/actions/ActionTypes';
-import { increasePageNumber, changeCity, changeKeyword, changeCategory } from '../../App/actions/CraigslistStatesAction';
+import { increasePageNumber, changeCity, changeKeyword, changeCategory } from '../../App/actions/CraigslistStatesActions';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
