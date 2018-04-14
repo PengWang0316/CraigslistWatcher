@@ -15,7 +15,7 @@ describe('ListActions Test', () => {
     // const CraigslistSearch = require('craigslist-searcher');
     // CraigslistSearch.search = jest.fn().mockReturnValue(new Promise(resolve => resolve(lists)));
     const store = mockStore();
-    return store.dispatch(fetchLists()).then(() => {
+    return store.dispatch(fetchLists({})).then(() => {
       expect(store.getActions()).toEqual(expectedActions);
     });
   });
@@ -25,7 +25,7 @@ describe('ListActions Test', () => {
     // const CraigslistSearch = require('craigslist-searcher');
     // CraigslistSearch.search = jest.fn().mockReturnValue(new Promise(resolve => resolve(lists)));
     const store = mockStore();
-    return store.dispatch(fetchMoreLists()).then(() => {
+    return store.dispatch(fetchMoreLists({})).then(() => {
       expect(store.getActions()).toEqual(expectedActions);
     });
   });

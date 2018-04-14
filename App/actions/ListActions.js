@@ -12,10 +12,18 @@ const fetchMoreListsSuccess = lists => ({
   lists
 });
 
-export const fetchLists = (page = 1) => dispatch =>
-  CraigslistSearch.search({ city: 'seattle', query: '', offset: (page - 1) * AMOUNT_ITEMS_IN_ONE_PAGE }).then(data => dispatch(fetchListsSuccess(data)));
+export const fetchLists = ({
+  page = 1, city, category, keyword
+}) => dispatch =>
+  CraigslistSearch.search({
+    city, query: keyword, category, offset: (page - 1) * AMOUNT_ITEMS_IN_ONE_PAGE
+  }).then(data => dispatch(fetchListsSuccess(data)));
 
-export const fetchMoreLists = (page = 1) => dispatch =>
-  CraigslistSearch.search({ city: 'seattle', query: '', offset: (page - 1) * AMOUNT_ITEMS_IN_ONE_PAGE }).then(data => dispatch(fetchMoreListsSuccess(data)));
+export const fetchMoreLists = ({
+  page = 1, city, category, keyword
+}) => dispatch =>
+  CraigslistSearch.search({
+    city, query: keyword, category, offset: (page - 1) * AMOUNT_ITEMS_IN_ONE_PAGE
+  }).then(data => dispatch(fetchMoreListsSuccess(data)));
 
 export default fetchLists;
