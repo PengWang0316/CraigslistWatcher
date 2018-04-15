@@ -37,12 +37,16 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react-native": "4.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.18.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
+    "react-dom": "^16.3.1",
+    "react-native-jest-mocks": "^1.1.1",
     "react-test-renderer": "^16.3.0",
     "redux-mock-store": "^1.5.1"
   },
@@ -50,6 +54,12 @@
     "preset": "react-native",
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|react-navigation)/"
+    ],
+    "setupFiles": [
+      "<rootDir>/App/setupTests.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "tools"
     ]
   }
 }
