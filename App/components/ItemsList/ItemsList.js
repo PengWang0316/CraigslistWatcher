@@ -116,10 +116,12 @@ export class ItemsList extends Component {
     );
   }
 }
+/* istanbul ignore next */
 const mapStateToProps = state => ({
   lists: state.lists,
   craigslistStates: state.craigslistStates
 });
+/* istanbul ignore next */
 const mapDispatchToProps = dispatch => ({
   fetchLists: parameter => dispatch(fetchLists(parameter)),
   fetchMoreLists: parameter => dispatch(fetchMoreLists(parameter)),
