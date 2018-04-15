@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test WatchListScreen snapshot test 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#e0e0e0",
+      "flex": 1,
+    }
+  }
+>
+  <DarkGreenStatusBar />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    The WatchListScreen
+  </Text>
+</View>
+`;
