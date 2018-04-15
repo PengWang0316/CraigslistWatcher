@@ -59,7 +59,10 @@
       "<rootDir>/App/setupTests.js"
     ],
     "coveragePathIgnorePatterns": [
-      "tools"
+      "tools",
+      "index.js",
+      "Styles.js",
+      "Colors.js"
     ]
   }
 }
