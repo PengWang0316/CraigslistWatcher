@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ItemsList renderFooter snapshot 1`] = `
+<View
+  style={
+    Object {
+      "borderColor": "#CED0CE",
+      "borderTopWidth": 1,
+      "paddingBottom": 80,
+      "paddingTop": 20,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</View>
+`;
+
+exports[`Test ItemsList renderItem snapshot 1`] = `
+<CraigslistListItem
+  item="item"
+/>
+`;
+
+exports[`Test ItemsList renderSeparator snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#CED0CE",
+      "height": 1,
+      "marginLeft": "14%",
+      "width": "86%",
+    }
+  }
+/>
+`;
+
+exports[`Test ItemsList snapshot test empty lists 1`] = `
+<View>
+  <ActivityIndicator
+    animating={true}
+    color="gray"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</View>
+`;
+
+exports[`Test ItemsList snapshot test not empty lists 1`] = `<View />`;
