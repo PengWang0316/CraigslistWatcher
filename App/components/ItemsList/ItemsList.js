@@ -10,7 +10,7 @@ import { increasePageNumber } from '../../actions/CraigslistStatesActions';
 import CraigslistListItem from '../CraigslistListItem';
 
 /** The component are used to show the item list that fetched from CraigsList. */
-class ItemsList extends Component {
+export class ItemsList extends Component {
   static propTypes = {
     lists: PropTypes.array.isRequired,
     craigslistStates: PropTypes.object.isRequired,
