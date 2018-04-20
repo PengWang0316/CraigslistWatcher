@@ -13,7 +13,7 @@ const craigslistStates = (state = {
     case INCREASE_PAGE_NUMBER_SUCCESS:
       return { ...state, pageNumber: state.pageNumber + 1 };
     case ADD_CRAIGSLIST_ITEM_SUCCESS:
-      return { ...state, items: { ...state.items, [action.itme.dataId]: action.item } };
+      return { ...state, items: { ...state.items, [action.item.dataId]: action.item } };
     default:
       return state;
   }
