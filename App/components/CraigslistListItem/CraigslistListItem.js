@@ -9,7 +9,10 @@ import { fetchCraigslistItem } from '../../actions/CraigslistStatesActions';
 /** ListItem for CraigsList's FlatList */
 export class CraigslistListItem extends PureComponent {
   static propTypes = {
-    item: PropTypes.object.isRequired
+    item: PropTypes.object.isRequired,
+    navigation: PropTypes.object.isRequired,
+    fetchCraigslistItem: PropTypes.func.isRequired,
+    craigslistStates: PropTypes.object.isRequired
   };
 
   /**
@@ -41,12 +44,22 @@ export class CraigslistListItem extends PureComponent {
     };
   }
 
+  /**
+   * When a user click the left icon, the avatar state will be set to the image's uri or call the action to fetch the item's detailed information.
+   * @return {null} No return.
+   */
   handleLeftIconClick = () => {
     if (this.props.craigslistStates.items[this.props.item.dataId]) this.setState({
       avatar: { uri: this.props.craigslistStates.items[this.props.item.dataId] },
       leftIcon: null
     }); else this.props.fetchCraigslistItem(this.props.item.url).catch(err => console.log(err));
   };
+
+  /**
+   * When a user click the component, navigate to the detailed screen.
+   * @return {null} No return.
+   */
+  handlePress = () => this.props.navigation.navigate('DetailedItem');
 
   /**
    * Rendering the jsx for the component.
@@ -64,6 +77,7 @@ export class CraigslistListItem extends PureComponent {
         leftIcon={this.state.leftIcon}
         badge={{ value: item.price }}
         containerStyle={styles.containerStyle}
+        onPress={this.handlePress}
       />
     );
   }

@@ -16,7 +16,8 @@ export class ItemsList extends Component {
     craigslistStates: PropTypes.object.isRequired,
     fetchLists: PropTypes.func.isRequired,
     fetchMoreLists: PropTypes.func.isRequired,
-    increasePageNumber: PropTypes.func.isRequired
+    increasePageNumber: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired
   };
 
   /**
@@ -54,6 +55,10 @@ export class ItemsList extends Component {
     category: this.props.craigslistStates.category
   }));
 
+  /**
+   * Loading new data from the data source when a user reach the end of the list.
+   * @return {null} No return.
+   */
   handleEndReached = () => {
     this.props.fetchMoreLists({
       page: this.props.craigslistStates.pageNumber + 1,
@@ -68,7 +73,7 @@ export class ItemsList extends Component {
    * Rendering eatch item for the FlatList.
    * @return {jsx} Return a CraigslistListItem component.
    */
-  renderItem = ({ item }) => <CraigslistListItem item={item} />;
+  renderItem = ({ item }) => <CraigslistListItem item={item} navigation={this.props.navigation} />;
 
   /**
    * Rendering the footer for the FlatList.
