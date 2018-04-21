@@ -50,7 +50,7 @@ export class CraigslistListItem extends PureComponent {
    */
   handleLeftIconClick = () => {
     if (this.props.craigslistStates.items[this.props.item.dataId]) this.setState({
-      avatar: { uri: this.props.craigslistStates.items[this.props.item.dataId] },
+      avatar: { uri: this.props.craigslistStates.items[this.props.item.dataId].images[0] },
       leftIcon: null
     }); else this.props.fetchCraigslistItem(this.props.item.url).catch(err => console.log(err));
   };

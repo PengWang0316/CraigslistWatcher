@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CraigslistListItem test  snapshot 1`] = `
+<ListItem
+  avatar={null}
+  badge={
+    Object {
+      "value": "$45",
+    }
+  }
+  containerStyle={
+    Object {
+      "backgroundColor": "#FFF",
+      "borderBottomWidth": 0,
+    }
+  }
+  leftIcon={
+    <Icon
+      name="wallpaper"
+      onPress={[Function]}
+      raised={true}
+    />
+  }
+  onPress={[Function]}
+  roundAvatar={true}
+  subtitle="albany / el cerrito 2018-04-20 17:18"
+  title="Sit and stand double stroller"
+/>
+`;
