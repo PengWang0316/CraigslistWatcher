@@ -106,7 +106,7 @@ describe('CraigslistListItem test', () => {
   test('handlePress', () => {
     const component = getShallowComponent();
     component.instance().handlePress();
-    expect(defaultProps.navigation.navigate).toHaveBeenLastCalledWith('DetailedItem', { item: defaultProps.item });
+    expect(defaultProps.navigation.navigate).toHaveBeenLastCalledWith('DetailedItem', { dataId: '6556745475' });
   });
 
   test(' snapshot', () => expect(renderer.create(<CraigslistListItem {...defaultProps} />).toJSON()).toMatchSnapshot());
