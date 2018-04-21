@@ -14,7 +14,8 @@ describe('Test ItemsList', () => {
     },
     fetchLists: jest.fn(),
     fetchMoreLists: jest.fn(),
-    increasePageNumber: jest.fn()
+    increasePageNumber: jest.fn(),
+    navigation: {}
   };
 
   const getComponent = (props = defaultPorps) => shallow(<ItemsList {...props} />);

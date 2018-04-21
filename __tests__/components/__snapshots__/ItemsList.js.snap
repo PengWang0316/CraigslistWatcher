@@ -23,6 +23,7 @@ exports[`Test ItemsList renderFooter snapshot 1`] = `
 exports[`Test ItemsList renderItem snapshot 1`] = `
 <CraigslistListItem
   item="item"
+  navigation={Object {}}
 />
 `;
 

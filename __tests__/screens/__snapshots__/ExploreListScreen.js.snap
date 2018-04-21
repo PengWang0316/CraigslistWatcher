@@ -18,6 +18,8 @@ exports[`Test ExploreListScreen snapshot test 1`] = `
 >
   <DarkGreenStatusBar />
   <SearchHeadBar />
-  <ItemsList />
+  <ItemsList
+    navigation={undefined}
+  />
 </View>
 `;
