@@ -106,7 +106,7 @@ describe('CraigslistListItem test', () => {
   test('handlePress', () => {
     const component = getShallowComponent();
     component.instance().handlePress();
-    expect(defaultProps.navigation.navigate).toHaveBeenLastCalledWith('DetailedItem', { dataId: '6556745475' });
+    expect(defaultProps.navigation.navigate).toHaveBeenLastCalledWith('DetailedItem', { dataId: '6556745475', url: 'https://sfbay.craigslist.org/eby/bab/d/sit-and-stand-double-stroller/6556745475.html' });
   });
 
   test(' snapshot', () => expect(renderer.create(<CraigslistListItem {...defaultProps} />).toJSON()).toMatchSnapshot());

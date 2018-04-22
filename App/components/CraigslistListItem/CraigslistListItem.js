@@ -59,7 +59,7 @@ export class CraigslistListItem extends PureComponent {
    * When a user click the component, navigate to the detailed screen.
    * @return {null} No return.
    */
-  handlePress = () => this.props.navigation.navigate('DetailedItem', { dataId: this.props.item.dataId });
+  handlePress = () => this.props.navigation.navigate('DetailedItem', { dataId: this.props.item.dataId, url: this.props.item.url });
 
   /**
    * Rendering the jsx for the component.
