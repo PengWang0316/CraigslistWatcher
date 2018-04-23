@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ImageCarousel Snapshot 1`] = `
+<Carousel
+  data={
+    Array [
+      "image 1 url",
+    ]
+  }
+  itemWidth={650}
+  loop={true}
+  renderItem={[Function]}
+  sliderWidth={750}
+/>
+`;
