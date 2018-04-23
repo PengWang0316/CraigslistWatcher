@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test CraigslistDetailedScreen CraigslistDetailedScreen Snapshot 1`] = `
+<View
+  collapsable={undefined}
+  onLayout={[Function]}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "backgroundColor": "#e0e0e0",
+      "flex": 1,
+      "paddingBottom": 0,
+      "paddingLeft": 0,
+      "paddingRight": 0,
+      "paddingTop": 20,
+    }
+  }
+>
+  <DarkGreenStatusBar />
+  <CraigslistDetailPage
+    dataId="dataId"
+    url="url"
+  />
+</View>
+`;
