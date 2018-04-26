@@ -10,8 +10,10 @@ export default StyleSheet.create({
     flexDirection: 'row'
   },
   title: {
+    overflow: 'hidden',
     fontSize: 18,
     fontWeight: '500',
-    marginRight: 10
+    marginRight: 10,
+    width: '80%'
   }
 });

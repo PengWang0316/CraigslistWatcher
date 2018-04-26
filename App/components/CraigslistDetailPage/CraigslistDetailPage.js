@@ -40,6 +40,13 @@ class CraigslistDetailPage extends Component {
           <Text style={Styles.title}>{item.title}</Text>
           <Badge value={item.price} />
         </View>
+        <View style={Styles.subView}>
+          <Text>{`Posted on: ${item.postedDate}`}</Text>
+          <Text>{`  Location: ${item.location}`}</Text>
+        </View>
+        <View style={Styles.subView}>
+          <Text>{item.description}</Text>
+        </View>
       </View>
     );
   }
