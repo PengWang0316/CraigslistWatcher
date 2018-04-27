@@ -15,5 +15,16 @@ export default StyleSheet.create({
     fontWeight: '500',
     marginRight: 10,
     width: '80%'
+  },
+  mapView: {
+    marginTop: 20,
+    marginHorizontal: 10,
+    height: 300,
+    width: 300,
+    justifyContent: 'flex-end',
+    alignItems: 'center'
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject
   }
 });

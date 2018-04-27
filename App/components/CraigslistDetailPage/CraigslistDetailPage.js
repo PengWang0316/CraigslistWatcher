@@ -3,6 +3,7 @@ import { ActivityIndicator, View, Text } from 'react-native';
 import { Badge } from 'react-native-elements';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import MapView from 'react-native-maps';
 
 import ImageCarousel from '../ImageCarousel';
 import Styles from './Styles';
@@ -47,6 +48,19 @@ class CraigslistDetailPage extends Component {
         <View style={Styles.subView}>
           <Text>{item.description}</Text>
         </View>
+        {item.latitude && item.longitude &&
+          <View style={Styles.mapView}>
+            <MapView
+              style={Styles.map}
+              initialRegion={{
+                latitude: item.latitude * 1,
+                longitude: item.longitude * 1,
+                latitudeDelta: 0.0622,
+                longitudeDelta: 0.0321
+                }}
+            />
+          </View>
+        }
       </View>
     );
   }
